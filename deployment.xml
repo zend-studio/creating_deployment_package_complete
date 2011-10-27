@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
+    <name>mydbapp</name>
+    <version>
+        <release>1.0</release>
+    </version>
+    <appdir>data</appdir>
+    <scriptsdir>scripts</scriptsdir>
+    <dependencies>
+    <required>
+      <php>
+        <min>5.3.0</min>
+      </php>
+    </required>
+  </dependencies>
+    <parameters>
+    <parameter display="db host" id="DB_HOST" readonly="false" required="true" type="string">
+       <defaultvalue>localhost</defaultvalue>
+    </parameter>
+    <parameter display="db name" id="DB_NAME" readonly="false" required="true" type="string">
+       <defaultvalue>test</defaultvalue>
+    </parameter>
+    <parameter display="table name" id="DB_TABLE" readonly="false" required="false" type="string">
+      <defaultvalue>employee</defaultvalue>
+    </parameter>
+    <parameter display="username" id="DB_USERNAME" readonly="false" required="true" type="string"/>
+    <parameter display="db password" id="DB_PASSWORD" identical="DB_PASSWORD" readonly="false" required="true" type="password"/>
+  </parameters>
+</package>
